@@ -1,0 +1,69 @@
+<title>Bakery Égypte</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+/* Mise en page : en-tête, deux résumés côte à côte, réponse sur les murs, puis les 7 feuilles du PDF en pleine largeur. */
+:root { --bg:#f2f4f5; --panel:#ffffff; --fg:#172228; --muted:#5d6c74; --line:#c9d1d5; --accent:#1d5f7d; --red:#c01c1c; --redbg:#fbe9e9; --f-d:"Barlow Semi Condensed","Arial Narrow",sans-serif; --f-b:"Barlow",system-ui,sans-serif; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#11181c; --panel:#182228; --fg:#e6ecef; --muted:#93a3ab; --line:#2e3d45; --accent:#6bb7d6; --red:#f08a8a; --redbg:#3a1f1f; color-scheme:dark; } }
+:root[data-theme="dark"] { --bg:#11181c; --panel:#182228; --fg:#e6ecef; --muted:#93a3ab; --line:#2e3d45; --accent:#6bb7d6; --red:#f08a8a; --redbg:#3a1f1f; color-scheme:dark; }
+* { box-sizing:border-box; }
+body { background:var(--bg); color:var(--fg); font-family:var(--f-b); font-size:15px; line-height:1.5; padding-block:28px 56px; padding-left:max(16px, env(safe-area-inset-left,0px)); padding-right:max(16px, env(safe-area-inset-right,0px)); }
+.wrap { max-width:1100px; margin:0 auto; display:flex; flex-direction:column; gap:28px; }
+header.hero { background:#14323f url(nile_banner.jpg) center/cover no-repeat; color:#fff; padding:clamp(28px,7vw,64px) clamp(18px,4vw,40px); min-height:clamp(220px,34vw,340px); display:flex; flex-direction:column; justify-content:center; align-items:flex-start; border-radius:4px; }
+header.hero h1,header.hero .lede { text-shadow:0 1px 8px rgba(0,0,0,.45); }
+header.hero .lede { color:#fdf0d6; max-width:56ch; }
+h1 { font-family:var(--f-d); font-weight:700; font-size:clamp(30px,5.5vw,46px); line-height:1.05; margin:0; text-wrap:balance; }
+.lede { color:var(--muted); margin:8px 0 0; max-width:64ch; }
+.open { display:inline-block; margin-top:14px; padding:10px 16px; background:var(--accent); color:var(--bg); font-weight:600; text-decoration:none; border-radius:4px; }
+.two { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:14px; }
+.card { background:var(--panel); border:1px solid var(--line); padding:16px 18px; min-width:0; }
+.card h2 { font-family:var(--f-d); font-size:22px; margin:0 0 4px; }
+.big { font-family:var(--f-d); font-weight:700; font-size:34px; color:var(--accent); line-height:1; }
+.card p { margin:8px 0 0; font-size:14px; }
+.wall { background:var(--redbg); border-left:4px solid var(--red); padding:14px 18px; }
+.wall h2 { font-family:var(--f-d); font-size:20px; margin:0 0 6px; color:var(--red); }
+.wall p { margin:6px 0 0; font-size:14.5px; max-width:80ch; }
+figure { margin:0; display:flex; flex-direction:column; gap:8px; }
+figcaption { font-size:13px; color:var(--muted); }
+figcaption b { color:var(--fg); font-weight:600; }
+.sheet { display:block; background:#fff; border:1px solid var(--line); }
+.sheet img { display:block; width:100%; height:auto; }
+h3 { font-family:var(--f-d); font-size:24px; margin:8px 0 0; }
+</style>
+<div class="wrap">
+  <header class="hero">
+    <h1>Bakery Égypte</h1>
+    <p class="lede">Trois scénarios pour produire des croissants de base, du pain pour sandwich et des buns pour burger. La version A tient dans la bakery existante de 14 m2, sans armoire froide. La version C, de 17,7 m2, prend 1 m sur la Meat area et intègre l'armoire. La version B reprend toute la Meat area, avec de plus grosses machines. Touche une feuille pour l'ouvrir en grand.</p>
+    <a class="open" href="Bakery_Egypte_Layout_A_B.pdf" target="_blank" rel="noopener">Ouvrir le PDF complet (12 feuilles)</a>
+    <a class="open" style="margin-left:8px;background:transparent;color:#fff;border:1px solid #fff" href="bakery-layout-en.html">English version</a>
+  </header>
+
+  <div class="two">
+    <div class="card"><h2>Version A, compacte</h2><div class="big">14,25 m²</div><p>4 750 × 3 000 mm. Aucun mur touché. Un seul four : convection Krystal 46.9V, pétrin spirale 40 L, pousse 1 chariot, laminoir de table, diviseuse-bouleuse, table à farine, lave-mains. L'armoire réfrigérée n'y tient pas sans bloquer un poste. Production : environ 75 à 125 kg de pâte par jour (page 11).</p></div>
+    <div class="card"><h2>Version C, intermédiaire</h2><div class="big">17,7 m²</div><p>5 890 × 3 000 mm. Mêmes machines que A, plus l'armoire réfrigérée, avec des passages libres. Un mur à casser (~140 mm), une cloison neuve à 5 890 mm, 1 m pris sur la Meat area. Même production que A (page 11).</p></div>
+    <div class="card"><h2>Version B, agrandie</h2><div class="big">26,7 m²</div><p>8 890 × 3 000 mm. Bakery + Meat area. Four rotatif Bongard 1 440 × 1 880 mm + convection Krystal, pétrin spirale 80 L, laminoir sur stand, pousse HERA-C, refroidisseur d'eau, armoires négative et positive, table, lave-mains. Machines plus grosses : 145 à 290 kg de pâte par jour selon la pousse (page 11).</p></div>
+  </div>
+
+  <div class="wall">
+    <h2>Versions B et C : un seul mur à casser</h2>
+    <p>Le mur d'environ 140 mm entre Bakery et Meat area, sur toute la profondeur de 3 000 mm. Les cloisons nord, ouest, sud et est restent. L'ouverture de 1 190 mm sur Cooking est la seule entrée ; celle de 1 000 mm à l'est est fermée.</p>
+    <p>En C, une cloison neuve referme la Meat area réduite à 3 000 mm. Deux points à régler en B : la Meat area disparaît et ses équipements sont à reloger, et la nature du mur (porteur ou non) n'est pas indiquée sur le plan, à faire valider avant la casse.</p>
+  </div>
+
+  <h3>Sur le plan d'ensemble</h3>
+  <figure><a class="sheet" href="pg-2.png" target="_blank" rel="noopener"><img src="pg-2.png" alt="Plan d'ensemble avec la version A" loading="lazy"></a><figcaption><b>Version A</b> sur le layout global.</figcaption></figure>
+  <figure><a class="sheet" href="pg-3.png" target="_blank" rel="noopener"><img src="pg-3.png" alt="Plan d'ensemble avec la version B et le mur à casser" loading="lazy"></a><figcaption><b>Version B</b> sur le layout global, mur à casser en rouge.</figcaption></figure>
+  <figure><a class="sheet" href="pg-4.png" target="_blank" rel="noopener"><img src="pg-4.png" alt="Plan d'ensemble avec la version C" loading="lazy"></a><figcaption><b>Version C</b> sur le layout global, mur à casser en rouge et cloison neuve.</figcaption></figure>
+
+  <h3>Schémas des équipements</h3>
+  <figure><a class="sheet" href="pg-5.png" target="_blank" rel="noopener"><img src="pg-5.png" alt="Schémas des équipements de la version A" loading="lazy"></a><figcaption><b>Version A</b> : un schéma par appareil, avec statut de la cote.</figcaption></figure>
+  <figure><a class="sheet" href="pg-6.png" target="_blank" rel="noopener"><img src="pg-6.png" alt="Schémas des équipements de la version B" loading="lazy"></a><figcaption><b>Version B</b> : appareils propres à cette version.</figcaption></figure>
+  <figure><a class="sheet" href="pg-7.png" target="_blank" rel="noopener"><img src="pg-7.png" alt="Schémas des équipements de la version C" loading="lazy"></a><figcaption><b>Version C</b> : comme A, plus l'armoire réfrigérée.</figcaption></figure>
+
+  <h3>Plans de détail</h3>
+  <figure><a class="sheet" href="pg-8.png" target="_blank" rel="noopener"><img src="pg-8.png" alt="Plan de détail de la version A" loading="lazy"></a><figcaption><b>Version A</b> avec flux, cotes et raccordements.</figcaption></figure>
+  <figure><a class="sheet" href="pg-9.png" target="_blank" rel="noopener"><img src="pg-9.png" alt="Plan de détail de la version B" loading="lazy"></a><figcaption><b>Version B</b> avec flux, mur à casser et raccordements.</figcaption></figure>
+  <figure><a class="sheet" href="pg-10.png" target="_blank" rel="noopener"><img src="pg-10.png" alt="Plan de détail de la version C" loading="lazy"></a><figcaption><b>Version C</b> avec flux, mur à casser, cloison neuve et armoire réfrigérée.</figcaption></figure>
+  <figure><a class="sheet" href="pg-11.png" target="_blank" rel="noopener"><img src="pg-11.png" alt="Volumes de production des versions A, C et B" loading="lazy"></a><figcaption><b>Volumes de production</b> : environ 75 à 125 kg de pâte par jour en A et C ; en B, 145 à 290 kg selon la pousse (un seul chariot : pas de gain sur A).</figcaption></figure>
+  <figure><a class="sheet" href="pg-12.png" target="_blank" rel="noopener"><img src="pg-12.png" alt="Tarif estimatif des équipements" loading="lazy"></a><figcaption><b>Tarif</b> en SAR hors TVA, tiré du classeur NABAT v5.0 : version A 238 856, version C 243 956, version B 538 086, hors lignes à coter.</figcaption></figure>
+</div>

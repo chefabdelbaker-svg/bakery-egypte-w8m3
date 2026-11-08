@@ -1,0 +1,71 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bakery Egypt</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+/* Mise en page : en-tête, deux résumés côte à côte, réponse sur les murs, puis les 7 feuilles du PDF en pleine largeur. */
+:root { --bg:#f2f4f5; --panel:#ffffff; --fg:#172228; --muted:#5d6c74; --line:#c9d1d5; --accent:#1d5f7d; --red:#c01c1c; --redbg:#fbe9e9; --f-d:"Barlow Semi Condensed","Arial Narrow",sans-serif; --f-b:"Barlow",system-ui,sans-serif; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#11181c; --panel:#182228; --fg:#e6ecef; --muted:#93a3ab; --line:#2e3d45; --accent:#6bb7d6; --red:#f08a8a; --redbg:#3a1f1f; color-scheme:dark; } }
+:root[data-theme="dark"] { --bg:#11181c; --panel:#182228; --fg:#e6ecef; --muted:#93a3ab; --line:#2e3d45; --accent:#6bb7d6; --red:#f08a8a; --redbg:#3a1f1f; color-scheme:dark; }
+* { box-sizing:border-box; }
+body { background:var(--bg); color:var(--fg); font-family:var(--f-b); font-size:15px; line-height:1.5; padding-block:28px 56px; padding-left:max(16px, env(safe-area-inset-left,0px)); padding-right:max(16px, env(safe-area-inset-right,0px)); }
+.wrap { max-width:1100px; margin:0 auto; display:flex; flex-direction:column; gap:28px; }
+header.hero { background:#14323f url(nile_banner.jpg) center/cover no-repeat; color:#fff; padding:clamp(28px,7vw,64px) clamp(18px,4vw,40px); min-height:clamp(220px,34vw,340px); display:flex; flex-direction:column; justify-content:center; align-items:flex-start; border-radius:4px; }
+header.hero h1,header.hero .lede { text-shadow:0 1px 8px rgba(0,0,0,.45); }
+header.hero .lede { color:#fdf0d6; max-width:56ch; }
+h1 { font-family:var(--f-d); font-weight:700; font-size:clamp(30px,5.5vw,46px); line-height:1.05; margin:0; text-wrap:balance; }
+.lede { color:var(--muted); margin:8px 0 0; max-width:64ch; }
+.open { display:inline-block; margin-top:14px; padding:10px 16px; background:var(--accent); color:var(--bg); font-weight:600; text-decoration:none; border-radius:4px; }
+.two { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:14px; }
+.card { background:var(--panel); border:1px solid var(--line); padding:16px 18px; min-width:0; }
+.card h2 { font-family:var(--f-d); font-size:22px; margin:0 0 4px; }
+.big { font-family:var(--f-d); font-weight:700; font-size:34px; color:var(--accent); line-height:1; }
+.card p { margin:8px 0 0; font-size:14px; }
+.wall { background:var(--redbg); border-left:4px solid var(--red); padding:14px 18px; }
+.wall h2 { font-family:var(--f-d); font-size:20px; margin:0 0 6px; color:var(--red); }
+.wall p { margin:6px 0 0; font-size:14.5px; max-width:80ch; }
+figure { margin:0; display:flex; flex-direction:column; gap:8px; }
+figcaption { font-size:13px; color:var(--muted); }
+figcaption b { color:var(--fg); font-weight:600; }
+.sheet { display:block; background:#fff; border:1px solid var(--line); }
+.sheet img { display:block; width:100%; height:auto; }
+h3 { font-family:var(--f-d); font-size:24px; margin:8px 0 0; }
+</style></head><body>
+<div class="wrap">
+  <header class="hero">
+    <h1>Bakery Egypt</h1>
+    <p class="lede">Three scenarios to produce basic croissants, sandwich bread and burger buns. Version A fits in the existing 14 m2 bakery, without a refrigerator. Version C, at 17.7 m2, takes 1 m from the Meat area and includes the refrigerator. Version B takes over the whole Meat area, with bigger machines. Tap a sheet to open it full size.</p>
+    <a class="open" href="Bakery_Egypt_Layout_A_B_EN.pdf" target="_blank" rel="noopener">Open the full PDF (12 sheets)</a>
+    <a class="open" style="margin-left:8px;background:transparent;color:#fff;border:1px solid #fff" href="index.html">Version française</a>
+  </header>
+
+  <div class="two">
+    <div class="card"><h2>Version A, compact</h2><div class="big">14.25 m²</div><p>4,750 × 3,000 mm. No wall touched. A single oven: Krystal 46.9V convection, 40 L spiral mixer, 1-trolley proofer, bench sheeter, divider-rounder, flour table, hand basin. The refrigerator does not fit without blocking a workstation. Production: about 75 to 125 kg of dough a day (page 11).</p></div>
+    <div class="card"><h2>Version C, intermediate</h2><div class="big">17.7 m²</div><p>5,890 × 3,000 mm. Same machines as A, plus the refrigerator, with clear aisles. One wall to break (~140 mm), a new partition at 5,890 mm, 1 m taken from the Meat area. Same production as A (page 11).</p></div>
+    <div class="card"><h2>Version B, enlarged</h2><div class="big">26.7 m²</div><p>8,890 × 3,000 mm. Bakery + Meat area. Bongard rotary oven 1,440 × 1,880 mm + Krystal convection, 80 L spiral mixer, sheeter on stand, HERA-C proofer, water chiller, freezer and refrigerated cabinets, table, hand basin. Bigger machines: 145 to 290 kg of dough a day depending on the proofer (page 11).</p></div>
+  </div>
+
+  <div class="wall">
+    <h2>Versions B and C: a single wall to break</h2>
+    <p>The wall of about 140 mm between Bakery and Meat area, over the full 3,000 mm depth. The north, west, south and east partitions stay. The 1,190 mm opening onto Cooking is the only entrance; the 1,000 mm one on the east is closed.</p>
+    <p>In C, a new partition closes the Meat area reduced to 3,000 mm. Two points to settle in B: the Meat area disappears and its equipment must be relocated, and the nature of the wall (load-bearing or not) is not shown on the plan, to be validated before breaking it.</p>
+  </div>
+
+  <h3>On the global layout</h3>
+  <figure><a class="sheet" href="en/pg-2.png" target="_blank" rel="noopener"><img src="en/pg-2.png" alt="Global layout with version A" loading="lazy"></a><figcaption><b>Version A</b> on the global layout.</figcaption></figure>
+  <figure><a class="sheet" href="en/pg-3.png" target="_blank" rel="noopener"><img src="en/pg-3.png" alt="Global layout with version B and the wall to break" loading="lazy"></a><figcaption><b>Version B</b> on the global layout, wall to break in red.</figcaption></figure>
+  <figure><a class="sheet" href="en/pg-4.png" target="_blank" rel="noopener"><img src="en/pg-4.png" alt="Global layout with version C" loading="lazy"></a><figcaption><b>Version C</b> on the global layout, wall to break in red and new partition.</figcaption></figure>
+
+  <h3>Equipment diagrams</h3>
+  <figure><a class="sheet" href="en/pg-5.png" target="_blank" rel="noopener"><img src="en/pg-5.png" alt="Equipment diagrams, version A" loading="lazy"></a><figcaption><b>Version A</b> : one diagram per appliance, with dimension status.</figcaption></figure>
+  <figure><a class="sheet" href="en/pg-6.png" target="_blank" rel="noopener"><img src="en/pg-6.png" alt="Equipment diagrams, version B" loading="lazy"></a><figcaption><b>Version B</b> : appliances specific to this version.</figcaption></figure>
+  <figure><a class="sheet" href="en/pg-7.png" target="_blank" rel="noopener"><img src="en/pg-7.png" alt="Equipment diagrams, version C" loading="lazy"></a><figcaption><b>Version C</b> : as A, plus the refrigerator.</figcaption></figure>
+
+  <h3>Detail plans</h3>
+  <figure><a class="sheet" href="en/pg-8.png" target="_blank" rel="noopener"><img src="en/pg-8.png" alt="Detail plan, version A" loading="lazy"></a><figcaption><b>Version A</b> with flows, dimensions and utility connections.</figcaption></figure>
+  <figure><a class="sheet" href="en/pg-9.png" target="_blank" rel="noopener"><img src="en/pg-9.png" alt="Detail plan, version B" loading="lazy"></a><figcaption><b>Version B</b> with flows, wall to break and utility connections.</figcaption></figure>
+  <figure><a class="sheet" href="en/pg-10.png" target="_blank" rel="noopener"><img src="en/pg-10.png" alt="Detail plan, version C" loading="lazy"></a><figcaption><b>Version C</b> with flows, wall to break, new partition and refrigerator.</figcaption></figure>
+  <figure><a class="sheet" href="en/pg-11.png" target="_blank" rel="noopener"><img src="en/pg-11.png" alt="Production volumes, versions A, C and B" loading="lazy"></a><figcaption><b>Production volumes</b>: about 75 to 125 kg of dough a day in A and C; in B, 145 to 290 kg depending on the proofer (a single trolley: no gain over A).</figcaption></figure>
+  <figure><a class="sheet" href="en/pg-12.png" target="_blank" rel="noopener"><img src="en/pg-12.png" alt="Equipment price estimate" loading="lazy"></a><figcaption><b>Price list</b> in SAR excl. VAT, from the NABAT v5.0 workbook: version A 238,856, version C 243,956, version B 538,086, excluding lines to quote.</figcaption></figure>
+</div>
+
+</body></html>
